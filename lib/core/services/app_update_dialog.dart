@@ -17,7 +17,7 @@ void showUpdateDialog(BuildContext context, Map<String, String> info) {
   final apkUrl = info['apkUrl'] ?? '';
   final ipaUrl = info['ipaUrl'] ?? '';
   final releaseUrl = info['releaseUrl'] ??
-      'https://github.com/qiaoba223/qiaoba-toolbox/releases/tag/v$version';
+      'https://github.com/${AppUpdateService.repo}/releases/tag/v$version';
   final notes = info['notes'] ?? '';
 
   final isIos = Platform.isIOS;

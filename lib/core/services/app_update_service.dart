@@ -10,7 +10,12 @@ import 'proxy_config.dart';
 
 /// 应用内一键更新服务 — 多通道高可用（镜像加速 + 列表兜底）
 class AppUpdateService {
-  static const String repo = 'qiaoba223/qiaoba-toolbox';
+  /// 更新源仓库：CI 通过 --dart-define=UPDATE_REPO=owner/name 注入，
+  /// 保证任意 fork 构建出的包只从自己的 Release 拉更新
+  static const String repo = String.fromEnvironment(
+    'UPDATE_REPO',
+    defaultValue: 'qiaoba223/qiaoba-toolbox',
+  );
 
   /// 动态获取当前应用安装的真实语义化版本
   static Future<String> getAppVersion() async {

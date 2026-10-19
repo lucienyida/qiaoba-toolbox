@@ -10,6 +10,7 @@ import 'core/theme/app_theme.dart';
 import 'core/theme/app_widgets.dart';
 import 'features/ctlogin/ct_login_page.dart';
 import 'features/yspck/yspck_page.dart';
+import 'features/unicom/unicom_page.dart';
 import 'features/zto/zto_page.dart';
 
 void main() async {
@@ -379,11 +380,26 @@ class _RootPageState extends State<RootPage>
                 ),
               ),
 
+              const SizedBox(height: 12),
+
+              // 工具卡片 4: 联通取Token（文案精炼，无标签）
+              AppAnimations.popIn(
+                index: 4,
+                child: _ModernToolCard(
+                  color: AppTheme.unicomColor,
+                  gradientColors: const [Color(0xFFFF5A5F), Color(0xFFE60012)],
+                  icon: Icons.sim_card_rounded,
+                  title: '联通取 Token',
+                  desc: '短信登录提取在线凭证',
+                  onTap: () => _open(context, const UnicomPage()),
+                ),
+              ),
+
               const SizedBox(height: 26),
 
               // 底部开发中状态指示
               AppAnimations.slideUp(
-                index: 4,
+                index: 5,
                 child: Center(
                   child: Container(
                     padding: const EdgeInsets.symmetric(
