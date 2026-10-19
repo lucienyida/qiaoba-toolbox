@@ -362,7 +362,7 @@ class _ZtoPageState extends State<ZtoPage> {
               ),
             ),
             const SizedBox(width: 10),
-            const Text('会员助手'),
+            const Text('中通会员助手'),
           ]),
         ),
         body: SingleChildScrollView(

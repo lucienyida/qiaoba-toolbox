@@ -183,7 +183,7 @@ class _UnicomPageState extends State<UnicomPage> {
               ),
             ),
             const SizedBox(width: 10),
-            const Text('取 Token'),
+            const Text('联通取 Token'),
           ]),
         ),
         body: SingleChildScrollView(

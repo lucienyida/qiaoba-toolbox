@@ -151,7 +151,7 @@ class _YspckPageState extends State<YspckPage> {
                   child: Icon(Icons.play_arrow, color: Colors.white, size: 18)),
             ),
             const SizedBox(width: 10),
-            const Text('CK 获取'),
+            const Text('央视频CK获取'),
           ]),
         ),
         body: SingleChildScrollView(

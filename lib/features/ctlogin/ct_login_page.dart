@@ -257,7 +257,7 @@ class _CtLoginPageState extends State<CtLoginPage> {
                           fontSize: 15))),
             ),
             const SizedBox(width: 10),
-            const Text('登录助手'),
+            const Text('电信登录助手'),
           ]),
         ),
         body: SingleChildScrollView(
