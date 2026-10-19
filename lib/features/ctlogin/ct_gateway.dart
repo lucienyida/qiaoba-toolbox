@@ -30,7 +30,7 @@ class CtLoginResponse {
       this.encodedAndroidId});
 }
 
-/// 电信官方网关直连 — 与原版 CTGateway.java 100% 逻辑一致
+/// CT 网关直连 — 与原版 CTGateway.java 100% 逻辑一致
 class CtGateway {
   static const String businessServer = 'https://appgo.189.cn:9200';
   static const String loginServer = 'https://appgologin.189.cn:9031';

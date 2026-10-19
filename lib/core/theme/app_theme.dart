@@ -87,10 +87,10 @@ class AppTheme {
   static const Color danger = Color(0xFFE74C3C);
 
   // 业务模块标识色
-  static const Color ctColor = Color(0xFF005BAC); // 电信蓝
-  static const Color yspColor = Color(0xFFE43D2B); // 央视红
-  static const Color ztoColor = Color(0xFF1A2A6C); // 中通深蓝
-  static const Color unicomColor = Color(0xFFE60012); // 联通红
+  static const Color ctColor = Color(0xFF005BAC); // CT 蓝
+  static const Color yspColor = Color(0xFFE43D2B); // YSP 红
+  static const Color ztoColor = Color(0xFF1A2A6C); // ZTO 深蓝
+  static const Color unicomColor = Color(0xFFE60012); // Unicom 红
 
   // 兼容别名（向后兼容旧组件引用）
   static const Color bg = Color(0xFFF8FAFC);

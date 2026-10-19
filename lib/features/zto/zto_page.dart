@@ -5,7 +5,7 @@ import '../../core/theme/app_theme.dart';
 import 'dx_captcha_dialog.dart';
 import 'zto_gateway.dart';
 
-/// 中通会员助手 — 100% 纯 Flutter 原生渲染（0延迟秒进，仅在滑块验证时弹出轻量对话框）
+/// 会员助手 — 100% 纯 Flutter 原生渲染（0延迟秒进，仅在滑块验证时弹出轻量对话框）
 class ZtoPage extends StatefulWidget {
   const ZtoPage({super.key});
 
@@ -88,7 +88,7 @@ class _ZtoPageState extends State<ZtoPage> {
     final phone = _loginPhoneCtrl.text.trim();
     final pwd = _loginPwdCtrl.text;
     if (phone.isEmpty) {
-      _toast('请输入中通手机号或账号');
+      _toast('请输入手机号或账号');
       return;
     }
     if (pwd.isEmpty) {
@@ -362,7 +362,7 @@ class _ZtoPageState extends State<ZtoPage> {
               ),
             ),
             const SizedBox(width: 10),
-            const Text('中通会员助手'),
+            const Text('会员助手'),
           ]),
         ),
         body: SingleChildScrollView(
@@ -512,7 +512,7 @@ class _ZtoPageState extends State<ZtoPage> {
           keyboardType: TextInputType.phone,
           maxLength: 11,
           decoration: const InputDecoration(
-            hintText: '请输入中通手机号',
+            hintText: '请输入手机号',
             counterText: '',
             prefixIcon: Icon(Icons.phone_android_rounded, size: 18),
           ),

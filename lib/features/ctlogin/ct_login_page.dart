@@ -8,7 +8,7 @@ import 'ct_crypto_util.dart';
 import 'ct_gateway.dart';
 import 'ct_history_store.dart';
 
-/// 电信登录助手页面 — 完整移植原版逻辑
+/// 登录助手页面 — 完整移植原版逻辑
 class CtLoginPage extends StatefulWidget {
   const CtLoginPage({super.key});
 
@@ -250,14 +250,14 @@ class _CtLoginPageState extends State<CtLoginPage> {
                 borderRadius: BorderRadius.circular(10),
               ),
               child: const Center(
-                  child: Text('翼',
+                  child: Text('ID',
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
                           fontSize: 15))),
             ),
             const SizedBox(width: 10),
-            const Text('电信登录助手'),
+            const Text('登录助手'),
           ]),
         ),
         body: SingleChildScrollView(
@@ -365,7 +365,7 @@ class _CtLoginPageState extends State<CtLoginPage> {
 
   Widget _buildStep1(bool isDark) =>
       Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-        _label('中国电信手机号', isDark),
+        _label('手机号', isDark),
         TextField(
             controller: _phoneCtrl,
             keyboardType: TextInputType.phone,

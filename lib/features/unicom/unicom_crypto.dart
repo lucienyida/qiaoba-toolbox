@@ -1,4 +1,4 @@
-/// 联通掌厅 RSA 工具 — 对齐 zlt.py 的 RSA_Encrypt
+/// Unicom RSA 工具 — 对齐 zlt.py 的 RSA_Encrypt
 /// 公钥 SPKI(base64) → PKCS#1 v1.5 填充 → 117 字节分块 → base64 输出
 import 'dart:convert';
 import 'dart:math';

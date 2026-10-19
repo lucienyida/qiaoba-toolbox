@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-/// 中通官方网关直连 — 与原版中通 MainActivity（本地 Java 网关）100% 逻辑一致
+/// ZTO 网关直连 — 与原版 MainActivity（本地 Java 网关）100% 逻辑一致
 class ZtoGateway {
   static const String serviceBase = 'https://hdgateway.zto.com';
   static const String mapiBase = 'https://mapi.zto.com';

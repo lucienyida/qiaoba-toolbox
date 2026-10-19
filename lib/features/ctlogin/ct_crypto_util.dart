@@ -1,4 +1,4 @@
-/// 电信官方加密工具集 — 与原版 CryptoUtil.java 100% 逻辑一致
+/// CT 加密工具集 — 与原版 CryptoUtil.java 100% 逻辑一致
 /// RSA/PKCS1 实现与 Java Cipher "RSA/ECB/PKCS1Padding" 语义一致
 import 'dart:convert';
 import 'dart:math';

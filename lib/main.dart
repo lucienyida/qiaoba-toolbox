@@ -337,14 +337,14 @@ class _RootPageState extends State<RootPage>
                         letterSpacing: 0.5)),
               ),
 
-              // 工具卡片 1: 电信登录助手（文案精炼，无标签）
+              // 工具卡片 1: 登录助手（文案精炼，无标签）
               AppAnimations.popIn(
                 index: 1,
                 child: _ModernToolCard(
                   color: AppTheme.ctColor,
                   gradientColors: const [Color(0xFF1E88E5), Color(0xFF005BAC)],
                   icon: Icons.phone_android_rounded,
-                  title: '电信登录助手',
+                  title: '登录助手',
                   desc: '登录提取设备与转换 ID',
                   onTap: () => _open(context, const CtLoginPage()),
                 ),
@@ -352,14 +352,14 @@ class _RootPageState extends State<RootPage>
 
               const SizedBox(height: 12),
 
-              // 工具卡片 2: 央视频CK获取（文案精炼，无标签）
+              // 工具卡片 2: CK 获取（文案精炼，无标签）
               AppAnimations.popIn(
                 index: 2,
                 child: _ModernToolCard(
                   color: AppTheme.yspColor,
                   gradientColors: const [Color(0xFFFF6550), Color(0xFFE43D2B)],
                   icon: Icons.play_arrow_rounded,
-                  title: '央视频CK获取',
+                  title: 'CK 获取',
                   desc: '一键提取完整登录凭证',
                   onTap: () => _open(context, const YspckPage()),
                 ),
@@ -367,14 +367,14 @@ class _RootPageState extends State<RootPage>
 
               const SizedBox(height: 12),
 
-              // 工具卡片 3: 中通会员助手（文案精炼，无标签）
+              // 工具卡片 3: 会员助手（文案精炼，无标签）
               AppAnimations.popIn(
                 index: 3,
                 child: _ModernToolCard(
                   color: AppTheme.ztoColor,
                   gradientColors: const [Color(0xFF2C3E8C), Color(0xFF1A2A6C)],
                   icon: Icons.local_shipping_rounded,
-                  title: '中通会员助手',
+                  title: '会员助手',
                   desc: '账号登录与找回密码',
                   onTap: () => _open(context, const ZtoPage()),
                 ),
@@ -382,14 +382,14 @@ class _RootPageState extends State<RootPage>
 
               const SizedBox(height: 12),
 
-              // 工具卡片 4: 联通取Token（文案精炼，无标签）
+              // 工具卡片 4: 取 Token（文案精炼，无标签）
               AppAnimations.popIn(
                 index: 4,
                 child: _ModernToolCard(
                   color: AppTheme.unicomColor,
                   gradientColors: const [Color(0xFFFF5A5F), Color(0xFFE60012)],
                   icon: Icons.sim_card_rounded,
-                  title: '联通取 Token',
+                  title: '取 Token',
                   desc: '短信登录提取在线凭证',
                   onTap: () => _open(context, const UnicomPage()),
                 ),

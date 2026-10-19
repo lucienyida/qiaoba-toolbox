@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// 联通取 Token — 历史记录存储
+/// 取 Token — 历史记录存储
 /// 字段: [{phone, tokenOnline, ecsToken, appId, at}]
 class UnicomHistoryItem {
   final String phone;

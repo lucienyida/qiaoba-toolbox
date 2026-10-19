@@ -4,7 +4,7 @@ import 'dart:math';
 
 import 'unicom_crypto.dart';
 
-/// 联通掌厅网关直连 — 对齐 zlt.py 的 UnicomLogin
+/// Unicom 网关直连 — 对齐 zlt.py 的 UnicomLogin
 /// 发码: /mobileService/sendRadomNum.htm  登录: /mobileService/radomLogin.htm
 class UnicomSendResult {
   final bool success;

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// 电信登录助手 — 历史记录存储
+/// 登录助手 — 历史记录存储
 /// 字段结构与原版一致: [{phone, androidId, remark, at}]
 class CtHistoryItem {
   final String phone;

@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import '../../core/theme/app_theme.dart';
 import 'jacc_client.dart';
 
-/// 央视频CK获取页面 — JACC 原生协议直连
+/// CK 获取页面 — JACC 原生协议直连
 class YspckPage extends StatefulWidget {
   const YspckPage({super.key});
 
@@ -151,7 +151,7 @@ class _YspckPageState extends State<YspckPage> {
                   child: Icon(Icons.play_arrow, color: Colors.white, size: 18)),
             ),
             const SizedBox(width: 10),
-            const Text('央视频CK获取'),
+            const Text('CK 获取'),
           ]),
         ),
         body: SingleChildScrollView(
@@ -172,13 +172,13 @@ class _YspckPageState extends State<YspckPage> {
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                _label('央视频手机号', isDark),
+                _label('手机号', isDark),
                 TextField(
                     controller: _phoneCtrl,
                     keyboardType: TextInputType.phone,
                     maxLength: 11,
                     decoration: const InputDecoration(
-                        hintText: '请输入央视频注册手机号', counterText: '')),
+                        hintText: '请输入注册手机号', counterText: '')),
                 const SizedBox(height: 12),
                 _label('短信验证码', isDark),
                 Row(children: [

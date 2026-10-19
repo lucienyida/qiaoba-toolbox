@@ -7,7 +7,7 @@ import '../../core/theme/app_theme.dart';
 import 'unicom_gateway.dart';
 import 'unicom_history_store.dart';
 
-/// 联通取 Token 页面 — 掌厅短信登录直连
+/// 取 Token 页面 — 网关短信登录直连
 class UnicomPage extends StatefulWidget {
   const UnicomPage({super.key});
 
@@ -183,7 +183,7 @@ class _UnicomPageState extends State<UnicomPage> {
               ),
             ),
             const SizedBox(width: 10),
-            const Text('联通取 Token'),
+            const Text('取 Token'),
           ]),
         ),
         body: SingleChildScrollView(
@@ -208,13 +208,13 @@ class _UnicomPageState extends State<UnicomPage> {
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                _label('联通手机号', isDark),
+                _label('手机号', isDark),
                 TextField(
                   controller: _phoneCtrl,
                   keyboardType: TextInputType.phone,
                   maxLength: 11,
                   decoration: const InputDecoration(
-                      hintText: '请输入联通手机号', counterText: ''),
+                      hintText: '请输入手机号', counterText: ''),
                 ),
                 const SizedBox(height: 12),
                 _label('短信验证码', isDark),
@@ -225,7 +225,7 @@ class _UnicomPageState extends State<UnicomPage> {
                       keyboardType: TextInputType.number,
                       maxLength: 6,
                       decoration: const InputDecoration(
-                          hintText: '掌厅收到的验证码', counterText: ''),
+                          hintText: '短信收到的验证码', counterText: ''),
                     ),
                   ),
                   const SizedBox(width: 8),
@@ -255,7 +255,7 @@ class _UnicomPageState extends State<UnicomPage> {
                       : const Text('获取 Token'),
                 ),
                 const SizedBox(height: 10),
-                Text('验证码由联通掌厅下发，本工具仅做登录请求转发',
+                Text('验证码由官方客户端下发，本工具仅做登录请求转发',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 11,
